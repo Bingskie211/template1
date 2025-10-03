@@ -1,0 +1,288 @@
+html(lang="en")
+    head
+        title Page title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="shuffle-for-tailwind.png")
+        script(src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js", defer="defer")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            section(class="relative pb-10 bg-coolGray-50 overflow-hidden", x-data="{ mobileNavOpen: false }")
+                nav
+                    div(class="container mx-auto px-4")
+                        div(class="flex h-24 items-center")
+                            a(class="inline-block", href="#")
+                                img(class="h-15", src="images/TOP-SHELF-Advertising.webp", alt="")
+                            div(class="hidden lg:flex ml-auto mr-12 items-center")
+                                a(class="inline-block hover:underline mr-10", href="#") About
+                                a(class="inline-block hover:underline mr-10", href="#") Services
+                                a(class="inline-block hover:underline mr-10", href="#") Projects
+                                a(class="inline-block hover:underline", href="#") Contact us
+                            a(class="group hidden lg:inline-flex py-4 px-8 items-center justify-center leading-none font-medium text-black hover:text-white border border-black rounded-full hover:bg-black transition duration-200", href="#")
+                                span(class="mr-2") Get consulation
+                                |                 
+                                span(class="group-hover:rotate-45 transform transition duration-100")
+                                    svg(width="10", height="10", viewbox="0 0 10 10", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M9 1L1 9", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                        path(d="M9 8.33571V1H1.66429", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                div(class="relative container mx-auto px-4")
+                    div(class="xl:max-w-5xl mt-8")
+                        h1(class="z-10 relative font-heading xs:text-9xl md:text-11xl tracking-tightest mb-9 lg:mb-14") Local Advertising and Digital Marketing Pros in Denver
+                        div(class="lg:hidden relative ml-auto max-w-2xl sm:pb-10")
+                            img(class="w-full max-w-lg ml-auto sm:-mt-20 mb-10", src="asitrastudio-assets/headers/subtract-photo-right.png", alt="")
+                            div(class="hidden sm:block absolute bottom-0 left-0 md:ml-12 mb-10 max-w-sm text-right")
+                                span(class="block text-xs") Since
+                                |                 
+                                span(class="block mb-3 text-xs") 1979
+                                p
+                                    span(class="block") Duoloco® is a strategic branding agency
+                                    |                   
+                                    span(class="block") focused on brand creation, rebrands, and brand
+                                    |                   
+                                    span(class="block") transformation for progressive companies.
+                        div(class="relative inline-flex flex-wrap md:flex-nowrap items-end")
+                            div(class="relative inline-block order-last lg:order-first md:mr-4 2xl:mr-24")
+                                img(class="block w-full h-80 md:max-w-sm xl:max-w-xl", src="asitrastudio-assets/headers/photo-rounded2.png", alt="")
+                                div(class="absolute top-0 right-0 w-40 h-40 mt-5 sm:-mr-20 flex items-center justify-center")
+                                    img(class="absolute top-0 left-0 animate-spinSlow", style="animation-direction: reverse;", src="asitrastudio-assets/headers/spin-bonus.svg", alt="")
+                                    img(class="relative", src="asitrastudio-assets/headers/arrow-spin.svg", alt="")
+                            div(class="sm:hidden lg:block relative z-10 ml-auto max-w-sm mb-10 2xl:mb-0 lg:mr-10 2xl:mr-4 text-right")
+                                p
+                                    span(class="block") Helping Businesses Get Noticed—On Screens and Online
+                    div(class="hidden lg:block absolute top-0 right-0 w-1/2 -mt-6")
+                        img(class="block", src="asitrastudio-assets/headers/subtract-photo-right.png", alt="")
+                div(:class="{'block': mobileNavOpen,'hidden': !mobileNavOpen}", class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-md z-50")
+                    div(x-on:click="mobileNavOpen = !mobileNavOpen", class="fixed inset-0 bg-gray-800 opacity-50")
+                    nav(class="relative flex flex-col py-6 px-10 w-full h-full bg-white overflow-y-auto")
+                        div(class="flex mb-auto items-center")
+                            a(class="inline-block mr-auto", href="#")
+                                img(class="h-4", src="asitrastudio-assets/logos/logo-asi.svg", alt="")
+                            button(x-on:click="mobileNavOpen = !mobileNavOpen")
+                                svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M6 18L18 6M6 6L18 18", stroke="#111827", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="py-12 mb-auto")
+                            ul(class="flex-col")
+                                li(class="mb-6")
+                                    a(class="inline-block text-black", href="#") About
+                                li(class="mb-6")
+                                    a(class="inline-block text-black", href="#") Services
+                                li(class="mb-6")
+                                    a(class="inline-block text-black", href="#") Projects
+                                li
+                                    a(class="inline-block text-black", href="#") Contact us
+                        div
+                            a(class="block mb-3 px-4 py-4 text-center font-medium text-black hover:text-white border border-black hover:bg-black rounded-full transition duration-200", href="#") Login
+                            a(class="block px-4 py-4 text-center font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200", href="#") Sign in
+            section(class="bg-coolGray-50")
+                div(class="")
+                    div(class="pb-10 pt-20 px-8 xl:px-32 bg-black")
+                        div(class="flex flex-wrap -mx-4 items-center")
+                            div(class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0")
+                                div(class="max-w-lg mx-auto")
+                                    h3(class="text-white text-5xl tracking-tight mb-6") Venue Partner Network
+                                    p(class="max-w-sm text-lg mb-10 text-white") Our mission is to help local businesses like yours reach their audience. Every month, millions of consumers see our screens and remember them.
+                                    |       
+                                    |       Join the network of businesses that are prioritizing hyper-local advertising!
+                                    a(class="group inline-flex py-5 px-8 items-center justify-center leading-none font-medium text-white hover:text-black border border-white rounded-full hover:bg-white transition duration-200", href="#")
+                                        span(class="mr-2") Get consulation
+                                        |                     
+                                        span(class="group-hover:rotate-45 transform transition duration-100")
+                                            svg(width="10", height="10", viewbox="0 0 10 10", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M9 1L1 9", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                                path(d="M9 8.33571V1H1.66429", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                            div(class="w-full lg:w-1/2 px-4")
+                                img(class="block rounded-4xl", src="images/man-woman-discussing-business-project.jpg", alt="")
+            section(class="py-10 bg-coolGray-50")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4 items-end mb-12")
+                        div(class="w-full md:w-1/2 lg:w-8/12 px-4 mb-10 md:mb-0")
+                            div
+                                span(class="inline-block mb-4 py-2 px-3 text-sm text-white leading-none bg-black rounded-full transition duration-200") Premium Marketing Solutions
+                                | 
+                                h2(class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight mb-6")                   Reach Customers with Indoor Digital Signage Across Denver
+                                |                 
+                                p(class="max-w-md lg:max-w-xl 2xl:max-w-none")                   Our (CITY)-based indoor advertising network puts your brand in front of real people, in real venues—restaurants, gyms, salons, retail spaces, and more. Whether you’re promoting daily specials or building brand awareness, our digital signage network delivers impactful, high-frequency exposure where it matters most.
+                                |                 
+                        div(class="w-full md:w-1/2 lg:w-4/12 px-4 text-right")
+                            a(class="group inline-flex items-center leading-none font-medium pb-2 border-b-2 border-black", href="#")
+                                span(class="mr-4") Explore Our Digital Marketing Services
+                                |                 
+                                span(class="group-hover:rotate-45 transform transition duration-100")
+                                    svg(width="11", height="11", viewbox="0 0 11 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M9.5 1.5L1.5 9.5", stroke="black", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                        path(d="M9.5 8.83571V1.5H2.16429", stroke="black", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                    | 
+                    img(class="block w-full rounded-4xl object-cover h-56 md:h-64 lg:h-72", src="images/download-35.avif", alt="")
+            section(class="py-4 bg-black")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4")
+                        | 
+                        div(class="w-full lg:w-5/12 px-4 order-last lg:order-first flex")
+                            div(class="w-full h-full flex items-center justify-center")
+                                img(class="block h-48 md:h-64 lg:h-72 w-full max-w-full rounded-4xl object-cover object-center", src="images/download-36.avif", alt="")
+                        div(class="w-full lg:w-7/12 px-4 py-20 md:py-28")
+                            div(class="max-w-3xl xl:max-w-5xl mx-auto lg:mr-0 text-center")
+                                h3(class="font-heading text-3xl md:text-4xl lg:text-5xl text-white tracking-tighter mb-8")                   Why Denver Businesses Choose Us
+                                |                 
+                                div(class="max-w-3xl lg:max-w-4xl mx-auto mb-10")
+                                    p(class="text-lg text-coolGray-500")                     We’re not just another agency. We’re your local advertising partner, with boots on the ground and screens in venues across the city. Our combined expertise in indoor signage and digital strategy gives businesses like yours the visibility you deserve.
+                                    |                   
+                                a(class="group inline-flex py-5 px-8 font-medium text-white hover:text-black leading-none items-center justify-center bg-blue-500 hover:bg-white rounded-full transition duration-150", href="#")
+                                    span(class="mr-2.5") Get consulation
+                                    |                   
+                                    span(class="group-hover:rotate-45 transform transition duration-100")
+                                        svg(width="10", height="11", viewbox="0 0 10 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                            path(d="M9 1.5L1 9.5", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M9 8.83571V1.5H1.66429", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+            section(class="relative py-36 bg-black overflow-hidden")
+                img(class="absolute top-0 left-0 w-full h-full object-cover", src="images/download-40.avif", alt="")
+                div(class="relative container mx-auto px-4")
+                    div(class="lg:max-w-3xl mx-auto text-center")
+                        h1(class="font-heading text-5xl sm:text-8xl xl:text-10xl text-white tracking-tighter mb-14")
+                            span Let’s Put Your Brand Where People Can’t Miss It
+                            |               
+                            span
+                        a(class="group inline-flex mb-3 sm:mb-0 sm:mr-4 py-5 px-8 text-black hover:text-white leading-none items-center justify-center bg-white hover:bg-black rounded-full transition duration-150", href="#")
+                            span(class="mr-2.5") Get consulation
+                            |               
+                            span(class="group-hover:rotate-45 transform transition duration-75")
+                                svg(width="10", height="11", viewbox="0 0 10 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M9 1.5L1 9.5", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+                                    path(d="M9 8.83571V1.5H1.66429", stroke="currentColor", stroke-width="1.3", stroke-miterlimit="10", stroke-linecap="round", stroke-linejoin="round")
+            section(class="py-12 md:py-24")
+                div(class="container mx-auto px-4")
+                    div(class="inline-flex w-full mx-auto items-start text-center mb-16")
+                        h1(class="font-heading tracking-tighter pt-4 text-5xl text-center") Our Full-Service Digital Marketing Solutions
+                    a(class="relative group block mb-8 rounded-5xl overflow-hidden", href="#")
+                        div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                        img(class="block w-full h-112 sm:h-135 object-cover", src="asitrastudio-assets/projects/photo-banner-shadow.png", alt="")
+                        div(class="absolute bottom-0 left-0 pb-14 px-5 xs:p-14")
+                            div(class="max-w-xs sm:max-w-xl")
+                                h3(class="text-3xl xs:text-4xl sm:text-5xl md:text-7xl text-white") Google Business Profile Optimization
+                    div(class="flex flex-wrap -mx-4")
+                        div(class="w-full md:w-1/2 xl:w-1/4 px-4 mb-8 xl:mb-0")
+                            a(class="group block", href="#")
+                                div(class="relative mb-6 rounded-4xl overflow-hidden")
+                                    div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                    img(class="block w-full h-80 object-cover", src="asitrastudio-assets/projects/photo-square2.png", alt="")
+                                h4(class="max-w-xs mw-xl-sm text-3xl") Website Design & SEO
+                        div(class="w-full md:w-1/2 xl:w-1/4 px-4 mb-8 xl:mb-0")
+                            a(class="group block", href="#")
+                                div(class="relative mb-6 rounded-4xl overflow-hidden")
+                                    div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                    img(class="block w-full h-80 object-cover", src="asitrastudio-assets/projects/photo-square1.png", alt="")
+                                h4(class="max-w-xs mw-xl-sm text-3xl") Social Media Content
+                        div(class="w-full xl:w-1/2 px-4")
+                            a(class="group block", href="#")
+                                div(class="relative mb-6 rounded-4xl overflow-hidden")
+                                    div(class="absolute left-0 top-0 h-full w-full group-hover:bg-opacity-10 group-hover:bg-black transition duration-200")
+                                    img(class="block w-full h-80 object-cover", src="asitrastudio-assets/projects/photo-horizonatl.png", alt="")
+                                h4(class="max-w-xs mw-xl-sm text-3xl") Pay-Per-Click Advertising
+            section(class="py-12 md:py-24 bg-black")
+                div(class="container mx-auto px-4")
+                    h1(class="font-heading text-6xl sm:text-8xl md:text-10xl tracking-tighter mb-20 text-white") FAQS
+                    div(class="flex flex-wrap -mx-4 -mb-20")
+                        div(class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-20")
+                            div(class="max-w-sm pr-10")
+                                h4(class="text-3xl mb-6 text-white") What is Indoor Digital Signage Advertising?
+                                p(class="text-lg text-white") It’s the placement of your ads on TV screens located inside high-traffic venues, offering brand visibility where people are already engaged.
+                        div(class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-20")
+                            div(class="max-w-sm pr-10")
+                                h4(class="text-3xl mb-6 text-white") Do you offer packages that include screens and online ads?
+                                p(class="text-lg text-white") Yes! We specialize in bundled local campaigns that combine signage and online channels for maximum reach.
+                        div(class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-20")
+                            div(class="max-w-sm pr-10")
+                                h4(class="text-3xl mb-6 text-white") Can you help my business rank on Google?
+                                p(class="text-lg text-white") Absolutely. Our Google Business Profile and local SEO experts are here to improve your visibility.
+            section(class="py-4 bg-coolGray-50")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4")
+                        | 
+                        div(class="w-full lg:w-1/2 xl:w-5/12 px-4 mb-12 lg:mb-0")
+                            | 
+                            div(class="max-w-lg mx-auto lg:mx-0 pt-10 pb-8 lg:py-12")
+                                | 
+                                h2(class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tighter mb-6")                   Let`s talk
+                                |                 
+                                span(class="block text-coolGray-600") Targeted advertising for Denver-area businesses ready to stand out and scale.
+                                |                 
+                                span(class="block font-medium mb-10") contact@example.com
+                                form(action="")
+                                    input(class="block w-full py-4 px-8 h-16 mb-6 text-coolGray-500 bg-transparent border border-coolGray-400 rounded-full", type="text", placeholder="Full name")
+                                    input(class="block w-full py-4 px-8 h-16 mb-6 text-coolGray-500 bg-transparent border border-coolGray-400 rounded-full", type="email", placeholder="E-mail")
+                                    textarea(class="block w-full h-52 py-4 px-8 mb-6 text-coolGray-500 bg-transparent border border-coolGray-400 rounded-3xl resize-none", placeholder="Message", rows="3")
+                                    div(class="mb-8")
+                                        span(class="block font-medium mb-6") What can we help you with?
+                                    button(class="block w-full py-5 px-8 sm:px-24 text-center font-medium text-white leading-none bg-black hover:bg-blue-500 rounded-full transition duration-150", type="submit")                     Send message
+                                    |                   
+                        | 
+                        div(class="w-full lg:w-1/2 xl:w-7/12 px-4 flex")
+                            div(class="w-full h-full flex items-center justify-center")
+                                img(class="w-full max-w-2xl h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[26rem] rounded-4xl object-cover object-center", src="images/mika-baumeister-nDciGidCdQo-unsplash.jpg", alt="")
+            section(class="py-12 md:py-20 bg-black")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap -mx-4 mb-32")
+                        div(class="w-full xl:w-3/12 px-4 mb-12 xl:mb-0")
+                            a(class="inline-block", href="#")
+                                img(src="images/image.webp", alt="")
+                        div(class="w-full sm:w-1/2 xl:w-2/12 px-4 mb-10 xl:mb-0")
+                            h5(class="text-lg text-white mb-4") About
+                            ul
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Contact
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Blog
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Our Storry
+                                li
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#")
+                                        span(class="mr-2") Careers
+                                        |                     
+                                        span(class="inline-block px-2 py-1 text-xs bg-blue-500 text-white uppercase rounded-full") Hiring
+                        div(class="w-full sm:w-1/2 xl:w-3/12 px-4 mb-10 xl:mb-0")
+                            h5(class="text-lg text-white mb-4") Company
+                            ul
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Press
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Brand Assets
+                                li(class="mb-2")
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Changelog
+                                li
+                                    a(class="inline-block text-lg text-coolGray-500 hover:text-coolGray-400", href="#") Help centre
+                        div(class="w-full xl:w-4/12 px-4")
+                            h4(class="max-w-sm text-2xl text-white mb-9") Join our newsletter to stay up to date on features and realases
+                            div(class="sm:flex max-w-xl")
+                                div(class="mb-3 sm:mb-0 mr-3")
+                                    input(class="w-full py-5 px-8 text-coolGray-500 bg-black border border-coolGray-800 rounded-full", type="email", placeholder="Enter your email")
+                                div(class="sm:flex-shrink-0")
+                                    button(class="inline-block w-full sm:w-auto py-5 px-8 text-center font-medium text-coolGray-600 bg-coolGray-900 hover:bg-coolGray-800 rounded-full transition duration-200", type="submit") Subscribe
+                    div(class="flex flex-wrap -mx-4")
+                        div(class="w-full xl:w-1/3 px-4 mb-6 xl:mb-0")
+                            span(class="text-sm font-medium text-coolGray-500") ©  2024 Top Shelf Advertising. All rights reserved.
+                        div(class="w-full xl:w-1/3 px-4 mb-6 xl:mb-0")
+                            div(class="sm:flex -mb-2 items-center")
+                                a(class="inline-flex mb-2 mr-8 items-center font-medium text-white hover:text-coolGray-400", href="#")
+                                    svg(width="17", height="13", viewbox="0 0 17 13", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M16.0809 1.78777C15.5109 2.03477 14.9219 2.20577 14.2949 2.28177C14.9409 1.90177 15.4349 1.29377 15.6629 0.552768C15.0549 0.913768 14.3899 1.16077 13.6869 1.31277C13.1169 0.704768 12.2999 0.324768 11.4069 0.324768C9.67786 0.324768 8.29086 1.73077 8.29086 3.44077C8.29086 3.68777 8.30986 3.91577 8.36686 4.14377C5.78286 4.02977 3.50286 2.77577 1.96386 0.894768C0.861859 2.87077 2.09686 4.50477 2.91386 5.05577C2.41986 5.05577 1.92586 4.90377 1.50786 4.67577C1.50786 6.21477 2.59086 7.48777 3.99686 7.77277C3.69286 7.86777 3.00886 7.92477 2.59086 7.82977C2.98986 9.06477 4.14886 9.97677 5.49786 9.99577C4.43386 10.8318 2.87586 11.4968 0.880859 11.2878C2.26786 12.1808 3.90186 12.6938 5.66886 12.6938C11.4069 12.6938 14.5229 7.94377 14.5229 3.83977C14.5229 3.70677 14.5229 3.57377 14.5039 3.44077C15.1499 2.96577 15.6819 2.41477 16.0809 1.78777Z", fill="currentColor")
+                                    span(class="ml-3") Twitter
+                                |                 
+                                a(class="inline-flex mb-2 mr-8 items-center font-medium text-white hover:text-coolGray-400", href="#")
+                                    svg(width="19", height="19", viewbox="0 0 19 19", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M10.0018 4.8916C7.73315 4.8916 5.89648 6.73027 5.89648 8.99694C5.89648 11.2656 7.73515 13.1023 10.0018 13.1023C12.2705 13.1023 14.1072 11.2636 14.1072 8.99694C14.1072 6.72827 12.2685 4.8916 10.0018 4.8916ZM10.0018 11.6616C8.52915 11.6616 7.33715 10.4689 7.33715 8.99694C7.33715 7.52494 8.52982 6.33227 10.0018 6.33227C11.4738 6.33227 12.6665 7.52494 12.6665 8.99694C12.6672 10.4689 11.4745 11.6616 10.0018 11.6616Z", fill="currentColor")
+                                        path(d="M13.2988 1.05026C11.8268 0.981591 8.18082 0.984924 6.70749 1.05026C5.41282 1.11092 4.27082 1.42359 3.35015 2.34426C1.81148 3.88292 2.00815 5.95626 2.00815 8.99692C2.00815 12.1089 1.83482 14.1343 3.35015 15.6496C4.89482 17.1936 6.99815 16.9916 10.0028 16.9916C13.0855 16.9916 14.1495 16.9936 15.2395 16.5716C16.7215 15.9963 17.8402 14.6716 17.9495 12.2923C18.0188 10.8196 18.0148 7.17426 17.9495 5.70092C17.8175 2.89226 16.3102 1.18892 13.2988 1.05026ZM15.6288 14.6316C14.6202 15.6403 13.2208 15.5503 9.98349 15.5503C6.65015 15.5503 5.31348 15.5996 4.33815 14.6216C3.21482 13.5036 3.41815 11.7083 3.41815 8.98626C3.41815 5.30292 3.04015 2.65026 6.73682 2.46092C7.58615 2.43092 7.83615 2.42092 9.97415 2.42092L10.0042 2.44092C13.5568 2.44092 16.3442 2.06892 16.5115 5.76492C16.5495 6.60826 16.5582 6.86159 16.5582 8.99626C16.5575 12.2909 16.6202 13.6356 15.6288 14.6316Z", fill="currentColor")
+                                        path(d="M14.2718 5.68869C14.8017 5.68869 15.2312 5.25918 15.2312 4.72935C15.2312 4.19953 14.8017 3.77002 14.2718 3.77002C13.742 3.77002 13.3125 4.19953 13.3125 4.72935C13.3125 5.25918 13.742 5.68869 14.2718 5.68869Z", fill="currentColor")
+                                    span(class="ml-3") Instagram
+                                |                 
+                                a(class="inline-flex mb-2 items-center font-medium text-white hover:text-coolGray-400", href="#")
+                                    svg(width="14", height="14", viewbox="0 0 14 14", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M13.1004 13.0993V8.30161C13.1004 5.94368 12.5928 4.14249 9.84186 4.14249C8.51552 4.14249 7.6313 4.86297 7.27106 5.55069H7.23831V4.35536H4.63477V13.0993H7.35294V8.7601C7.35294 7.61388 7.5658 6.51679 8.97401 6.51679C10.3658 6.51679 10.3822 7.81038 10.3822 8.8256V13.083H13.1004V13.0993Z", fill="currentColor")
+                                        path(d="M0.212891 4.35538H2.93106V13.0994H0.212891V4.35538Z", fill="currentColor")
+                                        path(d="M1.57195 -9.15527e-05C0.704104 -9.15527e-05 0 0.704012 0 1.57186C0 2.43971 0.704104 3.16019 1.57195 3.16019C2.4398 3.16019 3.14391 2.43971 3.14391 1.57186C3.14391 0.704012 2.4398 -9.15527e-05 1.57195 -9.15527e-05Z", fill="currentColor")
+                                    span(class="ml-3") Linkedin
+                        div(class="w-full xl:w-1/3 px-4 xl:text-right")
+                            a(class="inline-block text-sm mr-12 font-medium text-coolGray-500 hover:text-coolGray-400", href="#") Terms of Use
+                            a(class="inline-block font-medium text-sm text-coolGray-500 hover:text-coolGray-400", href="#") Privacy Policy
